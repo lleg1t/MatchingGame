@@ -5,7 +5,8 @@
 Правила простые: на поле 16 квадратов, внутри спрятаны 8 пар значков. Нажимаешь на два квадрата. Если значки одинаковые, они остаются открытыми. Если разные, то через секунду закрываются обратно. Когда открыл всё поле, выскакивает сообщение, что ты выиграл.
 
 <!-- СКРИН 1: игра в процессе, часть пар открыта. Файл screenshots/00-game.png -->
-![Игра в процессе](screenshots/00-game.png)
+<img width="536" height="545" alt="image" src="https://github.com/user-attachments/assets/599ac60d-e95e-48ac-b514-fde545dd12cf" />
+
 
 ## Что нужно, чтобы запустить
 
@@ -47,12 +48,12 @@
 Webdings это шрифт, где вместо букв нарисованы значки. Буква `c` в нём выглядит как чёрный квадрат. Если значки не отображаются нормально, нужно поставить `UseCompatibleTextRendering` = `True`.
 
 <!-- СКРИН 2: выбранная метка и справа её свойства. Файл screenshots/01-label-properties.png -->
-![Свойства метки](screenshots/01-label-properties.png)
 
 Потом скопировал эту метку (Ctrl+C) и вставил (Ctrl+V) во все остальные клетки. Всего получилось 16 меток.
 
 <!-- СКРИН 3: форма с 16 чёрными квадратами. Файл screenshots/02-grid-filled.png -->
-![Сетка из 16 меток](screenshots/02-grid-filled.png)
+<img width="616" height="561" alt="image" src="https://github.com/user-attachments/assets/59e91575-6a2d-4b45-a28a-8a27db88181a" />
+
 
 ### 3. Случайные значки
 
@@ -112,7 +113,9 @@ private void AssignIconsToSquares()
 Из панели элементов добавил `Timer`. Он появляется под формой, а не на ней. Интервал поставил `750` (миллисекунд).
 
 <!-- СКРИН 4: таймер под формой и его свойства (Interval = 750). Файл screenshots/03-timer-properties.png -->
-![Свойства таймера](screenshots/03-timer-properties.png)
+<img width="535" height="542" alt="image" src="https://github.com/user-attachments/assets/cb3d5d52-b2a7-4ba8-9b29-ce416ae99e71" /> <img width="530" height="537" alt="image" src="https://github.com/user-attachments/assets/57beeced-4038-4259-ab5c-44d42aae8e3c" /> <img width="533" height="535" alt="image" src="https://github.com/user-attachments/assets/a1bfd6fb-56ee-4785-b7ce-ca925cccd360" />
+
+
 
 Когда таймер срабатывает, он сам останавливается, прячет оба значка (цвет шрифта снова как у фона) и обнуляет `firstClicked` и `secondClicked`:
 
@@ -139,7 +142,8 @@ Close();
 ```
 
 <!-- СКРИН 5: окно «You matched all the icons!» после победы. Файл screenshots/04-win-message.png -->
-![Победа](screenshots/04-win-message.png)
+<img width="207" height="158" alt="image" src="https://github.com/user-attachments/assets/7fa3c1b6-eb7a-41d3-9593-7f8adabe7d3c" />
+
 
 ## Что в репозитории
 
